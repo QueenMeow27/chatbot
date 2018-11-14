@@ -16,7 +16,7 @@ echo "Inside post method";
 echo $requestBody;
 echo $text;
 	
-switch($test) {
+switch($text) {
 	case 'bindhiya':
 		$speech = "Hi Bindhiya.. Nice to meet you";
 		break;
