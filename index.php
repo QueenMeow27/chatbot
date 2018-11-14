@@ -30,6 +30,7 @@ $response->source= "webhook";
 
 echo $response;
 echo $response->fulfillmentText;
+	echo json_encode($response);
 }
 else
 {
