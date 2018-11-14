@@ -22,14 +22,14 @@ switch($text) {
 		break;
 }
 
-$response = new \stdClass();
-$response->fulfillmentText=$fulfillmentText;
-$response->displayText="This is the display text";
-$response->source= "webhook";
+$queryResult = new \stdClass();
+$queryResult->fulfillmentText=$fulfillmentText;
+$queryResult->displayText="This is the display text";
+$queryResult->source= "webhook";
 
-echo $response->fulfillmentText;
+echo $queryResult->fulfillmentText;
 
-return json_encode($response);
+return json_encode($queryResult);
 }
 else
 {
