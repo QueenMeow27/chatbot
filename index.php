@@ -32,7 +32,7 @@ $res = json_encode($queryResult);
 echo $res;
 	
 	
-$appres = file_get_contents('https://myprofile-cefd99309.dispatcher.ap1.hana.ondemand.com/myprofile2api_basic/wow/candidate/existsPrimary?primaryEmail=newuser65@gmail.com');	
+$appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/existsPrimary?primaryEmail=rajgow321@gmail.com');	
 echo $appres;
 $newdata = json_encode($appres);
 echo $newdata;
