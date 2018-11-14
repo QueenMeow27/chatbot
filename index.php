@@ -32,6 +32,8 @@ $response = new \stdClass();
 $response->speech="default response";
 $response->displayText="xxxxxxxxxxxxxxxxxxx";
 $response->source= "webhook";
+
+echo $response;
 echo $response->speech;
 }
 else
