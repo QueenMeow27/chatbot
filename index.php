@@ -1,9 +1,4 @@
-<HTML>
-<HEAD>
-	<TITLE> NEW PHP APP </TITLE>
-</HEAD>
-<BODY BGCOLOR="PINK">
-<CNETER> WELCOME </CENTER>
+
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];
@@ -41,5 +36,4 @@ else
 
 ?>
 
-</BODY>
-</HTML>
+
