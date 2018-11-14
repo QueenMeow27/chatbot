@@ -1,3 +1,10 @@
+<HTML>
+<HEAD>
+	<TITLE> NEW PHP APP </TITLE>
+</HEAD>
+<BODY BGCOLOR="PINK">
+<CNETER> WELCOME </CENTER>
+  
 <?php
 echo "hi"
 $method = $_SERVER['REQUEST_METHOD'];
@@ -28,3 +35,6 @@ else
 echo "Method not allowed";
 }
 ?>
+  
+</BODY>
+  </HTML>
