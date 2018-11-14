@@ -11,7 +11,8 @@ $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 $text = $json->result->parameters->text;
 echo "Inside post method";
-	
+echo $json;
+echo $text;	
 switch($test) {
 	case 'bindhiya':
 		$speech = "Hi Bindhiya.. Nice to meet you";
@@ -23,12 +24,12 @@ switch($test) {
 		$speech = "Hello All..";
 		break;
 }
-
+echo $speech;
 $response = new \stdClass();
 $response->speech="zzzzzzzzzzzzzzzzzzz";
 $response->displayText="xxxxxxxxxxxxxxxxxxx";
 $response->source= "webhook";
-
+echo $response;
 }
 else
 {
