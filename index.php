@@ -28,7 +28,8 @@ $queryResult->displayText="This is the display text";
 $queryResult->source= "webhook";
 
 echo $queryResult->fulfillmentText;
-
+$res = json_encode($queryResult);
+echo $res;
 return json_encode($queryResult);
 }
 else
