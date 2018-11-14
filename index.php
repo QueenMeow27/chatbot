@@ -9,7 +9,7 @@ if($method =="POST"){
 $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 $text = $json->queryResult->queryText;
-echo "Inside php method";
+
 switch($text) {
 	case 'check the link':
 		$fulfillmentText = "Hi Bindhiya.. Nice to meet you";
@@ -28,9 +28,8 @@ $response->displayText="This is the display text";
 $response->source= "webhook";
 
 echo $response->fulfillmentText;
-$res = JsonConvert.SerializeObject($response);
-echo $res;
-return($res);
+
+return json_encode($response);
 }
 else
 {
