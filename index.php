@@ -28,7 +28,7 @@ $response->displayText="This is the display text";
 $response->source= "webhook";
 
 echo $response->fulfillmentText;
-return $response;
+return json_encode($response);
 }
 else
 {
