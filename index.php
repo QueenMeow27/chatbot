@@ -9,8 +9,7 @@ if($method =="POST"){
 $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 $text = $json->queryResult->queryText;
-echo $json;
-echo $text;
+echo "Inside php method";
 switch($text) {
 	case 'bindhiya':
 		$fulfillmentText = "Hi Bindhiya.. Nice to meet you";
@@ -22,15 +21,14 @@ switch($text) {
 		$fulfillmentText = "Hello All..";
 		break;
 }
-echo $fulfillmentText;
+
 $response = new \stdClass();
 $response->fulfillmentText=$fulfillmentText;
 $response->displayText="This is the display text";
 $response->source= "webhook";
 
 echo $response;
-echo $response->displayText;
-echo $response->source;	
+
 }
 else
 {
