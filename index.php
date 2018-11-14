@@ -29,7 +29,11 @@ $response->displayText="This is the display text";
 $response->source= "webhook";
 
 echo $response;
-echo json_encode($response);
+	echo $response->displayText;
+	echo $response->source;
+
+	$res = json_encode($response);
+	echo $res;
 	
 }
 else
