@@ -1,4 +1,3 @@
-
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];
@@ -31,11 +30,7 @@ $response->source= "webhook";
 
 echo $response;
 echo $response->displayText;
-echo $response->source;
-
-	$res = json_encode($response);
-	echo $res;
-	
+echo $response->source;	
 }
 else
 {
