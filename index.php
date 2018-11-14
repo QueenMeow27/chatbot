@@ -11,7 +11,7 @@ $json = json_decode($requestBody);
 $text = $json->queryResult->queryText;
 echo "Inside php method";
 switch($text) {
-	case 'bindhiya':
+	case 'check the link':
 		$fulfillmentText = "Hi Bindhiya.. Nice to meet you";
 		break;
 	case 'ramya':
@@ -27,8 +27,8 @@ $response->fulfillmentText=$fulfillmentText;
 $response->displayText="This is the display text";
 $response->source= "webhook";
 
-echo $response;
-
+echo $response->fulfillmentText;
+return $response;
 }
 else
 {
