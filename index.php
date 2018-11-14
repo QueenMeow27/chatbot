@@ -25,12 +25,12 @@ switch($text) {
 echo $fulfillmentText;
 $response = new \stdClass();
 $response->fulfillmentText=$fulfillmentText;
-$response->displayText="";
+$response->displayText="This is the display text";
 $response->source= "webhook";
 
 echo $response;
-echo $response->fulfillmentText;
-	echo json_encode($response);
+echo json_encode($response);
+	
 }
 else
 {
