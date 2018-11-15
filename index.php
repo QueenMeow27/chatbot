@@ -29,6 +29,7 @@ $queryResult->fulfillmentMessages= json_encode(array('text' => "This is the disp
 $queryResult->source= "webhook";
 
 header('Content-Type: application/json');
+	
 echo json_encode($queryResult);	
 	
 $appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/existsPrimary?primaryEmail=rajgow321@gmail.com');	
