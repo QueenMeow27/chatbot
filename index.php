@@ -27,11 +27,10 @@ $queryResult->fulfillmentText=$fulfillmentText;
 $queryResult->displayText="This is the display text";
 $queryResult->source= "webhook";
 
-
-	
+header('Content-Type: application/json');
+echo json_encode($queryResult);	
 	
 $appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/existsPrimary?primaryEmail=rajgow321@gmail.com');	
-echo $appres;
 $newdata = json_encode($appres);
 echo $newdata;
 	
