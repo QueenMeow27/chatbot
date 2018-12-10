@@ -32,7 +32,7 @@ header('Content-Type: application/json');
 	
 echo json_encode($queryResult);	
 	
-$appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/existsPrimary?primaryEmail=rajgow321@gmail.com');	
+$appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/Picklist2?picklistId=yesNo');	
 $newdata = json_encode($appres);
 echo $newdata;
 	
