@@ -24,7 +24,8 @@ switch($text1) {
 
 $queryResult = new \stdClass();
 $queryResult->fulfillmentText=$fulfillmentText;
-$fulfillmentMessages->text= new \stdClass();
+$fulfillmentMessages->text=array();
+$fulfillmentMessages->text[] =array('text' => "This is the display text");
 $text = array();
 $text[] = array('text' => "This is the display text");
 $fulfillmentMessages->text->text= $text;
