@@ -24,8 +24,8 @@ switch($text) {
 
 $queryResult = new \stdClass();
 $queryResult->fulfillmentText=$fulfillmentText;
-$queryResult->fulfillmentMessages= json_encode(array('text' => "This is the display text"));
-	
+$text= json_encode(array('text' => "This is the display text"));
+$queryResult->fulfillmentMessages = $text;
 $queryResult->source= "webhook";
 
 header('Content-Type: application/json');
