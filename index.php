@@ -32,6 +32,7 @@ $fulfillmentMessages->text->text= $text;
 $queryResult->fulfillmentMessages = $fulfillmentMessages->text;
 $queryResult->source= "webhook";
 
+
 header('Content-Type: application/json');
 	
 echo json_encode($queryResult);	
