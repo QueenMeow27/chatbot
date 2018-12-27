@@ -8,9 +8,9 @@ if($method =="POST"){
 
 $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
-$text = $json->queryResult->queryText;
+$text1 = $json->queryResult->queryText;
 
-switch($text) {
+switch($text1) {
 	case 'check the link':
 		$fulfillmentText = "Hi Bindhiya.. Nice to meet you";
 		break;
