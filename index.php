@@ -24,9 +24,9 @@ switch($text1) {
 
 $queryResult = new \stdClass();
 $queryResult->fulfillmentText=$fulfillmentText;
-$test = array();
-$test[] = array('test' => "This is the display text");
-$fulfillmentMessages->text= $test;
+$text = array();
+$text[] = array('text' => "This is the display text");
+$fulfillmentMessages->text= $text;
 $queryResult->fulfillmentMessages = $fulfillmentMessages->text;
 $queryResult->source= "webhook";
 
