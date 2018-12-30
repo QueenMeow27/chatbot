@@ -26,8 +26,7 @@ $queryResult = new \stdClass();
 $queryResult->fulfillmentText=$fulfillmentText;
 
 $text = new \stdClass();	
-$text->text = array();
-$text->text[] = array('text' => "This is the display text");
+$text->text = "my new text";
 
 $fulfillmentMessages->text= $text->text;
 //$fulfillmentMessages->text->text= array();
