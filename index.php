@@ -9,13 +9,14 @@ if($method =="POST"){
 $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 $text1 = $json->queryResult->queryText;
+$ans = $json->queryResult->fulfillmentText;	
 
 switch($text1) {
 	case 'give me yes no picklist':
 		$fulfillmentText = "Hi Bindhiya.. Nice to meet you";
 		break;
 	case 'picklist':
-		$fulfillmentText = "Hi Ramya.. Nice to meet you";
+		$fulfillmentText = $ans;
 		break;
 	default:
 		$fulfillmentText = "Hello All..";
