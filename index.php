@@ -11,10 +11,10 @@ $json = json_decode($requestBody);
 $text1 = $json->queryResult->queryText;
 
 switch($text1) {
-	case 'check the link':
+	case 'give me yes no picklist':
 		$fulfillmentText = "Hi Bindhiya.. Nice to meet you";
 		break;
-	case 'ramya':
+	case 'picklist':
 		$fulfillmentText = "Hi Ramya.. Nice to meet you";
 		break;
 	default:
@@ -25,10 +25,11 @@ switch($text1) {
 $queryResult = new \stdClass();
 $queryResult->fulfillmentText=$fulfillmentText;
 	
-$fulfillmentMessages->text= array();
+$fulfillmentMessages->text= new \stdClass();
+//$fulfillmentMessages->text->text= array();
 $text = array();
 $text[] = array('text' => "This is the display text");
-$fulfillmentMessages->text[]= $text;
+$fulfillmentMessages->text= $text;
 $queryResult->fulfillmentMessages = $fulfillmentMessages->text;
 $queryResult->source= "webhook";
 
