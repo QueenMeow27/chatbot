@@ -10,7 +10,6 @@ $requestBody = file_get_contents('php://input');
 $json = json_decode($requestBody);
 $text1 = $json->queryResult->queryText;
 $id = $json->queryResult->fulfillmentText;	
-
 	
 
 	
@@ -19,7 +18,7 @@ switch($text1) {
 		$fulfillmentText = "Hi Bindhiya";
 		break;
 	case 'picklist':
-		$fulfillmentText = $ans;
+		$fulfillmentText = $id;
 		break;
 	default:
 		$fulfillmentText = "Hello All..";
@@ -28,14 +27,6 @@ switch($text1) {
 	
 $queryResult = new \stdClass();
 $queryResult->fulfillmentText=$fulfillmentText;
-	
-$text1->text2="my new msg";	
-$text->text1 = $text1->text2;
-
-	
-
-
-$queryResult->fulfillmentMessages = $text->text1;
 $queryResult->source= "webhook";
 
 //header('Content-Type: application/json');	
