@@ -19,7 +19,7 @@ switch($text1) {
 		header('Content-Type: application/json');	
 		$appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/Picklist2?picklistId=yesNo');	
 		$newdata = json_encode($appres);
-	        echo $newdata;
+	       // echo $newdata;
 		$fulfillmentText = "Hi Bindhiya";
 		break;
 	case 'picklist':
