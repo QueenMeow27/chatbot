@@ -16,10 +16,7 @@ $id = $json->queryResult->fulfillmentText;
 	
 switch($text1) {
 	case 'picklist':
-		header('Content-Type: application/json');	
-		$appres = file_get_contents('https://my.wowcareers.com.au/myprofile2api_basic/wow/candidate/Picklist2?picklistId=yesNo');	
-		$newdata = json_encode($appres);
-	       // echo $newdata;
+		
 		$fulfillmentText = "Hi Bindhiya";
 		break;
 	case 'picklist':
