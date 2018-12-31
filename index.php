@@ -16,7 +16,6 @@ $id = $json->queryResult->fulfillmentText;
 	
 switch($text1) {
 	case 'picklist':
-		
 		$fulfillmentText = "Hi Bindhiya";
 		break;
 	case 'picklist':
