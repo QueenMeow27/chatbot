@@ -14,7 +14,7 @@ $ans = $json->queryResult->fulfillmentText;
 
 	
 switch($text1) {
-	case 'picklist':
+	case 'give me yes no picklist':
 		$fulfillmentText = "Hi Bindhiya";
 		break;
 	case 'picklist':
